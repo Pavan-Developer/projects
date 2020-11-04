@@ -31,8 +31,10 @@ namespace ShoppingCartAPI.Controllers
         }
 
         // POST: api/Product
-        public void Post([FromBody]string value)
+        public List<ProductModel> Post([FromBody] ProductModel product)
         {
+            productList.AddProductOrder(product.productId, product.productDesc, product.productPrice, product.productQuantity, product.total);
+            return productList.getProducts().ToList();
         }
 
         // PUT: api/Product/5
