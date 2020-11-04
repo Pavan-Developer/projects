@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Scripts/CustomJS.js"></script>
     <script>
-        function reload() {
-            window.location.reload();
-        }
+
     </script>
 </head>
 <body>
@@ -34,7 +33,7 @@
                 <asp:Label ID="lblErr" runat="server" />
             </div>
             <div style="text-align: right; font-size: 18px">
-                <asp:Button ID="btnPlaceOrder" runat="server" Text="Place order" CssClass="btn btn-success" OnClick="btnPlaceOrder_Click"/>
+                <asp:Button ID="btnPlaceOrder" runat="server" Text="Place order" CssClass="btn btn-success" OnClientClick="return false;" />
             </div>
             <br />
             <asp:GridView ID="gvCart"
@@ -56,13 +55,13 @@
                 </Columns>
             </asp:GridView>
 
-            <div style="font-size: 18px; text-align: right">
+            <div class="viewBasketlbl">
                 <asp:Label ID="lblCartTotal" runat="server" Font-Bold="true" />
             </div>
-            <div style="font-size: 18px; text-align: right">
+            <div class="viewBasketlbl">
                 <asp:Label ID="lblShippingcost" runat="server" Font-Bold="true" />
             </div>
-            <div style="font-size: 18px; text-align: right">
+            <div class="viewBasketlbl">
                 <asp:Label ID="lblTotal" runat="server" Font-Bold="true" />
             </div>
         </div>

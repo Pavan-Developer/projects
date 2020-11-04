@@ -24,9 +24,6 @@
             </div>
         </nav>
         <div class="container">
-<%--            <div id="divAlertSuccess" class="alert alert-success" style="text-align:center">
-                Product Added to the cart
-            </div>--%>
             <h1>PRODUCT LIST</h1>
             <asp:GridView ID="gvProductList" runat="server"
                 AutoGenerateColumns="false" CssClass="table table-responsive">
@@ -44,7 +41,6 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
-            <span id="table" />
         </div>
 
     </form>

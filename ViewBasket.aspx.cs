@@ -33,6 +33,7 @@ namespace ShoppingCartAPI
             }
         }
 
+        //This function calculates the shipping costs, basket total and total costs
         private void CalculateCosts(DataTable dt)
         {
             int carttotal = 0;
@@ -70,6 +71,7 @@ namespace ShoppingCartAPI
 
         }
 
+        //This function removed the item from the Shopping basket.
         protected void btnRemove_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -104,6 +106,7 @@ namespace ShoppingCartAPI
             }
         }
 
+        //This function places the order
         protected void btnPlaceOrder_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();

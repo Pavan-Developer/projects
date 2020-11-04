@@ -19,6 +19,8 @@ namespace ShoppingCartAPI
 
                 gvFinish.DataSource = dt;
                 gvFinish.DataBind();
+
+                Session["cart"] = null;
             }
         }
     }

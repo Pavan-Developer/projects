@@ -16,6 +16,7 @@ namespace ShoppingCartAPI
         IEnumerable<ProductModel> productList = null;
         protected void Page_Load(object sender, EventArgs e)
         {
+            //This code get the list of products from the productAPI
             if (!IsPostBack)
             {
                 HttpClient httpClient = new HttpClient();
@@ -41,6 +42,7 @@ namespace ShoppingCartAPI
             }
         }
 
+        //This function Adds the selected product to the session
         protected void btnAddtoCart_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;

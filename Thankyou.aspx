@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="Styles.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,7 +20,7 @@
             </div>
         </nav>
         <div class="container">
-            <div style="font-size: 18px; text-align: center">
+            <div class="divThank">
                 <asp:Label ID="lblFinal" runat="server" Text="Thank you for placing your order. Your order is successfully posted." />
                 <br />
 <%--                <asp:Label ID="lbl" runat="server" Text="Please see your order details below" />--%>
