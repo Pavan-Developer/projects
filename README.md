@@ -9,8 +9,8 @@ Start page: Shopping cart.aspx file displays the list of products (API Get() cal
 
 Add the products to the cart by clicking on 'Add to cart' button.
 
-Click on 'Go to cart' in the navigation pane to view the items in the cart. This cart page also calculates the shipping cost, total products cost and total cost.
+Click 'Go to cart' in the navigation pane to view the items in the cart. This cart page also calculates the shipping cost, total products cost and total cost.
 
-Click on 'Place order' on Cart basket page to place and finish the order.
+Click 'Place order' on Cart basket page to place and finish the order.
 
 
